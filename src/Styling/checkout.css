@@ -1,0 +1,18 @@
+.checkout__img{
+    object-fit: contain;
+    width:1125px;
+    margin-bottom:10px;
+}
+.checkout__text{
+    background-color: white;
+    margin-bottom: -9px;
+    margin-top: -12px;
+    padding-left: 5px;
+}
+
+.upblock{
+    display: flex;
+}
+.checkout{
+    width: 500vh;
+}

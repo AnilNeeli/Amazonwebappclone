@@ -1,0 +1,21 @@
+.home__image{
+    width:100%!important;
+    mask-image: linear-gradient(to bottom,rgba(0,0,0,1),rgba(0,0,0,0))!important;
+    z-index:-1!important;
+    margin-bottom: -150px!important;
+ 
+}
+.home__row{
+    display: flex!important;
+    z-index:1!important;
+    margin-left:5px!important;
+    margin-right: 5px!important;
+    margin-top:20px!important;
+
+}
+
+.home{
+    max-width: 1300px!important;
+    margin-left:auto!important;
+    margin-right:auto!important;
+}
