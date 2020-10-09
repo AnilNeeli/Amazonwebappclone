@@ -3,6 +3,7 @@ import './Styling/Header.css';
 import {Link} from "react-router-dom"
 import SearchIcon from "@material-ui/icons/Search"
 import ShoppingBasketIcon from  "@material-ui/icons/ShoppingBasket"
+import Grid from '@material-ui/core/Grid'
 import {useStateValue} from "./State"
 import {auth} from "./firebase"
 function Header() {
@@ -12,8 +13,11 @@ function Header() {
     }
     return (
         <div>
+            
 
-                    <div className="header">
+                    <Grid container spacing={3} justify="center"> 
+        <Grid item xs={12} md={12}>
+            <div className="header">
             <Link to="/">
             <img className="header__logo" src="http://pngimg.com/uploads/amazon/amazon_PNG11.png" alt="Amazon"/>
             </Link>
@@ -28,12 +32,7 @@ function Header() {
                         <span className="heade__optionlinetwo">{user ?'Sign Out':'Sign IN'}</span>
                     </div>
                 </Link>
-                <Link to="/"className="header__links">
-                    <div className="header__options">
-                        <span className="header__optionlineone">Returns</span>
-                        <span className="heade__optionlinetwo">&Orders</span>
-                    </div>
-                </Link>
+                
                 <Link to="/" className="header__links">
                     <div className="header__options">
                         <span className="header__optionlineone">Your</span>
@@ -46,11 +45,13 @@ function Header() {
                         <span className="heade__optionlinetwo headerbasket_Count">{basket?.length}</span>
                     </div>
                 </Link>
-
+                
             </div>
+</div>
+            </Grid>
+            </Grid>
             </div>
             
-        </div>
     )
 }
 

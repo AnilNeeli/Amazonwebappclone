@@ -11,11 +11,17 @@
     margin-left:5px!important;
     margin-right: 5px!important;
     margin-top:20px!important;
-
 }
 
 .home{
     max-width: 1300px!important;
     margin-left:auto!important;
     margin-right:auto!important;
+}
+
+.product{
+    display: flex!important;
+    z-index:1!important;
+    margin-top:20px!important;
+    height: 450px;
 }
