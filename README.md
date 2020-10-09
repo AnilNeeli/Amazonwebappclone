@@ -1,1 +1,1 @@
-It as amzone clone we app with firebase authentication
+It as amzone clone web app with firebase authentication
