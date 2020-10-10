@@ -11,8 +11,13 @@ function Checkout() {
         <div>
             <Grid container spacing={3} justify="center"> 
         <Grid item xs={12} md={10}>
-            <div>
+            <div className="image">
+            <Grid item xs={10} md={6}>
             <img className="checkout__img" src="https://images-eu.ssl-images-amazon.com/images/G/31/img19/AmazonPay/Rajeshwari/Oct/GW/DesktopHero_1500x600._CB402740210_.jpg" alt="add"></img>
+            </Grid>
+            <Grid item xs={10} md={6}>
+            <img className="checkout__img" src="https://images-eu.ssl-images-amazon.com/images/G/31/img20/Events/jupiter20/teaser2/GW/6-Desktop-Hero1x_English_3000x1200n._CB403509617_.jpg" alt="add"></img>
+            </Grid>
             </div>
             </Grid>
             <Grid item xs={10} md={2}>
