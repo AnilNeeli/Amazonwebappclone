@@ -1,7 +1,10 @@
 .checkout__img{
     object-fit: contain;
-    width:1125px;
-    margin-bottom:10px;
+    width:100%;
+    height:100%;
+    padding: 15px;
+    margin-left: -15px;
+    
 }
 .checkout__text{
     background-color: white;
@@ -10,9 +13,12 @@
     padding-left: 5px;
 }
 
-.upblock{
-    display: flex;
-}
+
 .checkout{
     width: 500vh;
 }
+
+
+
+
+

@@ -3,24 +3,31 @@ import {useStateValue} from "./State"
 import './Styling/checkout.css';
 import CheckoutProduct from "./CheckoutProduct"
 import Subtotal from './Subtotal';
+import Grid from '@material-ui/core/Grid'
 
 function Checkout() {
     const[{basket}]=useStateValue();
     return (
-        <div className="checkout">
-            <div className="upblock">
-            <img className="checkout__img" src="https://images-eu.ssl-images-amazon.com/images/G/31/img17/Home/LA/Aall_jupiter_creatives/Dishwasher/Dishwasher-header-banner-Desktop._CB1198675309_.png" alt="add"></img>
-            {basket?.length===0?(
+        <div>
+            <Grid container spacing={3} justify="center"> 
+        <Grid item xs={12} md={10}>
             <div>
+            <img className="checkout__img" src="https://images-eu.ssl-images-amazon.com/images/G/31/img19/AmazonPay/Rajeshwari/Oct/GW/DesktopHero_1500x600._CB402740210_.jpg" alt="add"></img>
+            </div>
+            </Grid>
+            <Grid item xs={10} md={2}>
+            {basket?.length===0?(
+            <div className="Total">
                 <Subtotal/>
 
             </div>):
-            (  <div>
+            (  <div className="Total">
                <Subtotal/>
                  
             </div>
         )}
-        </div>
+        </Grid>
+        </Grid>
         {basket?.length===0?(
             <div>
                 <h2>Your shopping cart is empty</h2>
