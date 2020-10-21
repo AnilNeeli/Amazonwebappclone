@@ -15,7 +15,7 @@ function App() {
 
   
   useEffect(()=>{
-    auth.onAuthStateChanged((authUser)=>{
+    const unsubscribe=auth.onAuthStateChanged((authUser)=>{
       if(authUser){
         dispatch({type:'SET_USER',user:authUser})
       }
@@ -23,6 +23,9 @@ function App() {
         dispatch({type:'SET_USER',user:null})
       }
     })
+    return ()=>{
+        unsubscribe(); 
+    }
    
   },[])
 
